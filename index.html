@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body onload="openAllComp(), switchTOengANDfrench(0)">
+
+    <header>
+        
+        <div class="Title">
+            <h1>TFT by Blue frog</h1>
+        </div>
+
+
+        <img src="IMAGE/chonccset95.webp" alt="">
+
+        
+        <div class="langbutton">
+
+            <svg width="69px" height="69px" viewBox="0 -4 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g clip-path="url(#clip0_1310_8031)"> <path d="M27.999 0H-0.000976562V20H27.999V0Z" fill="url(#paint0_linear_1310_8031)"></path> <path d="M27.999 0H13.3324V20H27.999V0Z" fill="url(#paint1_linear_1310_8031)"></path> <path d="M9.33236 0H-0.000976562V20H9.33236V0Z" fill="url(#paint2_linear_1310_8031)"></path> <path d="M18.6657 0H9.33237V20H18.6657V0Z" fill="url(#paint3_linear_1310_8031)"></path> </g> <defs> <linearGradient id="paint0_linear_1310_8031" x1="13.999" y1="0" x2="13.999" y2="20" gradientUnits="userSpaceOnUse"> <stop stop-color="white"></stop> <stop offset="1" stop-color="#F0F0F0"></stop> </linearGradient> <linearGradient id="paint1_linear_1310_8031" x1="20.6657" y1="0" x2="20.6657" y2="20" gradientUnits="userSpaceOnUse"> <stop stop-color="#F44653"></stop> <stop offset="1" stop-color="#EE2A39"></stop> </linearGradient> <linearGradient id="paint2_linear_1310_8031" x1="4.66569" y1="0" x2="4.66569" y2="20" gradientUnits="userSpaceOnUse"> <stop stop-color="#1035BB"></stop> <stop offset="1" stop-color="#042396"></stop> </linearGradient> <linearGradient id="paint3_linear_1310_8031" x1="13.999" y1="0" x2="13.999" y2="20" gradientUnits="userSpaceOnUse"> <stop stop-color="white"></stop> <stop offset="1" stop-color="#F0F0F0"></stop> </linearGradient> <clipPath id="clip0_1310_8031"> <rect width="28" height="20" rx="2" fill="white"></rect> </clipPath> </defs> </g></svg>
+                <label class="switch">
+                    <input type="checkbox" onclick="switchTOengANDfrench(1)">
+                    <span class="slider round"></span>
+                </label>
+            <svg width="64px" height="64px" viewBox="0 -4 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g clip-path="url(#clip0_503_2952)"> <rect width="28" height="20" rx="2" fill="white"></rect> <mask id="mask0_503_2952" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="20"> <rect width="28" height="20" rx="2" fill="white"></rect> </mask> <g mask="url(#mask0_503_2952)"> <rect width="28" height="20" fill="#0A17A7"></rect> <path fill-rule="evenodd" clip-rule="evenodd" d="M-1.28244 -1.91644L10.6667 6.14335V-1.33333H17.3334V6.14335L29.2825 -1.91644L30.7737 0.294324L21.3263 6.66667H28V13.3333H21.3263L30.7737 19.7057L29.2825 21.9165L17.3334 13.8567V21.3333H10.6667V13.8567L-1.28244 21.9165L-2.77362 19.7057L6.67377 13.3333H2.95639e-05V6.66667H6.67377L-2.77362 0.294324L-1.28244 -1.91644Z" fill="white"></path> <path d="M18.668 6.33219L31.3333 -2" stroke="#DB1F35" stroke-width="0.666667" stroke-linecap="round"></path> <path d="M20.0128 13.6975L31.3666 21.3503" stroke="#DB1F35" stroke-width="0.666667" stroke-linecap="round"></path> <path d="M8.00555 6.31046L-3.83746 -1.67099" stroke="#DB1F35" stroke-width="0.666667" stroke-linecap="round"></path> <path d="M9.29006 13.6049L-3.83746 22.3105" stroke="#DB1F35" stroke-width="0.666667" stroke-linecap="round"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M0 12H12V20H16V12H28V8H16V0H12V8H0V12Z" fill="#E6273E"></path> </g> </g> <defs> <clipPath id="clip0_503_2952"> <rect width="28" height="20" rx="2" fill="white"></rect> </clipPath> </defs> </g></svg>
+        
+        </div>
+
+
+            <!--
+            <div id="buttonheader" onclick="openmenu()">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round"></path> <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round"></path> <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round"></path> </g></svg>
+            </div>
+
+    
+            <div class="menu">
+                <a href="#">acceuil</a>
+                <a href="#">oiaushjd</a>
+                <a href="#">asda</a>
+                <a href="#">asdar</a>
+                <a href="#">asdasd</a>
+            </div>
+            -->
+
+    </header>
+
+
+
+
+    <main>
+        
+
+        <div class="presentationframe">
+             
+            <div class="Textpresentation">
+
+            <strong>
+                <p id="Welcome">
+                
+                </p> <br> <br>
+            </strong>
+
+            <p id="ideesite">
+
+            </p> <br>
+
+
+            <p id="concept">
+
+            </p> <br> <br>
+
+            <p id="bonneGame">
+
+            </p>
+
+
+
+
+
+
+
+            </div>
+            
+            <div class="imagechoncc">
+                <img src="IMAGE/Cook_N'_Conjure_Emote (1).png" alt="" id="choncc">
+            </div>
+
+
+
+
+
+
+            <div class="chonccies">
+
+                <div class="imagechonccies">
+                    <img src="IMAGE/choncc_emote_master_inventory.png" alt="" id="chonccmaster">
+                </div>
+                <div class="imagechonccies">
+                    <img src="IMAGE/choncc_emote_diamond_inventory.png" alt="" id="chonccdiamond">
+                </div>
+
+                <div class="imagechonccies">
+                    <img src="IMAGE/choncc_emote_platinum_inventory.png" alt="" id="chonccplat">
+                </div>
+
+                <div class="imagechonccies">
+                    <img src="IMAGE/em_choncc_challenger_inventory.png" alt="" id="chonccchall">
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+        <div class="Global">
+
+
+
+            <div class="Composition"> 
+
+                <div class="Comp" id="FirstComp">
+
+                    <div class="CompEntet" id="FirstCompEntet" onclick="openFirstcomp(), rotatearrow(0)">
+                        <h1>Tireurs vanguard</h1>
+                        <img src="IMAGE/TFT14_Xayah.avif" alt="" id="xayah">
+                        <img src="IMAGE/TFT14_Aphelios.avif" alt="" id="aphelios">
+                        <img src="IMAGE/tft14_vanguard.svg" alt="" id="vanguardsvg">
+                        <img src="IMAGE/arrow-next-small-svgrepo-com (2).svg" alt="" id="arrowsvg1" class="arrow">
+                    </div>
+                    
+                    <div class="Compdetail" id="FirstCompdetail">
+                        <img src="IMAGE/CaptureTacterMarksmanvan.PNG" alt="" id="photocomp">
+
+                        <div class="detail" >
+                            <a href="https://www.tacter.com/tft/guides/marksman-vanguard-65a41833" target="_blank" class="detailbutton">More infos</a>
+                        </div>
+            
+                    </div>
+
+                </div>
+
+                
+                <div class="Comp" id="SecondComp" onclick="openSecondcomp(), rotatearrow(1)">
+
+                    <div class="CompEntet" id="SecondCompEntet">
+                        <h1>Divinicorp flex</h1>
+                        <img src="IMAGE/TFT14_Vex.avif" alt="" id="vex">
+                        <img src="IMAGE/TFT14_Urgot.avif" alt="" id="urgot">
+                        <img src="IMAGE/tft14_divinicorp.svg" alt="" id="divinicorpsvg">
+                        <img src="IMAGE/arrow-next-small-svgrepo-com (2).svg" alt="" id="arrowsvg2" class="arrow">
+                    </div>
+
+                    <div class="Compdetail" id="SecondCompdetail">
+                        <img src="IMAGE/Flex_divinicorp.PNG" alt="" id="photocomp">
+        
+
+                        <div class="detail">
+                            <a href="https://www.tacter.com/tft/guides/flex-divinicorp-guide-complet-3539d1ee" target="_blank" class="detailbutton">More infos</a>
+                        </div>
+            
+                    </div>
+
+                </div>
+
+                <div class="Comp" id="ThirdComp" onclick="openThirdcomp(), rotatearrow(2)">
+
+                    <div class="CompEntet" id="ThirdCompEntet">
+                        <h1>Shaco Reroll</h1>
+                        <img src="IMAGE/tft14_shaco_square.tft_set14.png" alt="" id="shaco">
+                        <img src="IMAGE/tft14_zed_square.tft_set14.png" alt="" id="zed">
+                        <img src="IMAGE/tft14_mob.svg" alt="" id="syndicatsvg">
+                        <img src="IMAGE/arrow-next-small-svgrepo-com (2).svg" alt="" id="arrowsvg3" class="arrow">
+                    </div>
+
+                    <div class="Compdetail" id="ThirdCompdetail">
+                        <img src="IMAGE/Shaco_reroll.PNG" alt="" id="photocomp">
+
+                        <div class="detail">
+                            <a href="https://www.tacter.com/tft/guides/shaco-reroll-guide-complet-4c71b853" target="_blank" id="detailbutton">More infos</a>
+                        </div>
+            
+                    </div>
+                    
+                </div>
+
+                <div class="Comp" id="FourthComp" onclick="openFourthcomp(), rotatearrow(3)">
+
+                    <div class="CompEntet" id="FourthCompEntet">
+                        <h1> Reroll Twisted Fate </h1>
+                        <img src="IMAGE/TFT14_TwistedFate.avif" alt="" id="TF">
+                        <img src="IMAGE/TFT14_Skarner.avif" alt="" id="skarner">
+                        <img src="IMAGE/tft14_vanguard.svg" alt="" id="vanguardsvg">
+                        <img src="IMAGE/arrow-next-small-svgrepo-com (2).svg" alt="" id="arrowsvg4" class="arrow">
+                    </div>
+
+                    <div class="Compdetail" id="FourthCompdetail">
+                        <img src="IMAGE/TF_reroll.PNG" alt="" id="photocomp">
+
+
+                        <div class="detail">
+                            <a href="https://www.tacter.com/tft/guides/twisted-fate-reroll-guide-complet-51ca0728" target="_blank" id="detailbutton">More infos</a>
+                        </div>
+            
+                    </div>
+                    
+                </div>
+
+
+                <div class="Comp" id="FifthComp">
+
+                    <div class="CompEntet" id="FifthCompEntet" onclick="openFifthcomp(), rotatearrow(4)">
+                        <h1> Stratège flex</h1>
+                        <img src="IMAGE/TFT14_Neeko.avif" alt="" id="neeko">
+                        <img src="IMAGE/TFT14_Annie.avif" alt="" id="annie">
+                        <img src="IMAGE/tft14_controller.svg" alt="" id="controllersvg">
+                        <img src="IMAGE/arrow-next-small-svgrepo-com (2).svg" alt="" id="arrowsvg5" class="arrow">
+                    </div>
+
+                    <div class="Compdetail" id="FifthCompdetail">
+                        <img src="IMAGE/Flex_strat.PNG" alt="" id="photocomp">
+
+                        <div class="detail">
+                            <a href="https://www.tacter.com/tft/guides/flex-startegist-general-6d034b32" target="_blank" id="detailbutton">More infos</a>
+                        </div>
+            
+                    </div>
+                    
+                </div>
+
+                <div class="Comp" id="SixthComp">
+
+                    <div class="CompEntet" id="SixthCompEntet" onclick="openSixthcomp(), rotatearrow(5)">
+                        <h1> Nitro flex Jhin</h1>
+                        <img src="IMAGE/TFT14_Naafiri.avif" alt="" id="naafiri">
+                        <img src="IMAGE/TFT14_Jhin.avif" alt="" id="jhin">
+                        <img src="IMAGE/tft14_hotrod.svg" alt="" id="hotrodsvg">
+                        <img src="IMAGE/arrow-next-small-svgrepo-com (2).svg" alt="" id="arrowsvg6" class="arrow">
+                    </div>
+
+                    <div class="Compdetail" id="SixthCompdetail">
+                        <img src="IMAGE/Nitro_jhin.PNG" alt="" id="photocomp">
+
+                        <div class="detail">
+                            <a href="https://www.tacter.com/tft/guides/nitro-jhin-440a3ced" target="_blank" id="detailbutton">More infos</a>
+                        </div>
+            
+                    </div>
+                    
+                </div>
+
+
+
+                <div class="Comp" id="SeventhComp"  onclick="openSeventhcomp(), rotatearrow(6)">
+
+                    <div class="CompEntet" id="SeventhCompEntet">
+                        <h1> Vayne reroll</h1>
+                        <img src="IMAGE/TFT14_Jarvan.avif" alt="" id="jarvan">
+                        <img src="IMAGE/TFT14_Vayne.avif" alt="" id="vayne">
+                        <img src="IMAGE/tft14_strong.svg" alt="" id="slayersvg">
+                        <img src="IMAGE/tft14_vanguard.svg" alt="" id="vanguardsvg">
+                        <img src="IMAGE/arrow-next-small-svgrepo-com (2).svg" alt="" id="arrowsvg7" class="arrow">
+                    </div>
+
+                    <div class="Compdetail" id="SeventhCompdetail">
+                        <img src="IMAGE/Vayne_reroll.PNG" alt="" id="photocomp">
+                      
+
+                        <div class="detail">
+                            <a href="https://www.tacter.com/tft/guides/vayne-reroll-guide-complet-6ef638f1" target="_blank" id="detailbutton">More infos</a>
+                        </div>
+            
+                    </div>
+                    
+                </div>
+
+
+                <div class="Comp" id="EigthComp" onclick="openEigthcomp(), rotatearrow(7)">
+
+                    <div class="CompEntet" id="EigthCompEntet">
+                        <h1> Fiddle reroll (Bruiser)</h1>
+                        <img src="IMAGE/TFT14_Fiddlesticks.avif" alt="" id="fiddle">
+                        <img src="IMAGE/14BruiserEmblemItem.avif" alt="" id="spatbruiser">
+                        <img src="IMAGE/tft14_bruiser.svg" alt="" id="bruisersvg">
+                        <img src="IMAGE/arrow-next-small-svgrepo-com (2).svg" alt="" id="arrowsvg8" class="arrow">
+                    </div>
+
+                    <div class="Compdetail" id="EigthCompdetail">
+                        <img src="IMAGE/fiddle_reroll.PNG" alt="" id="photocomp">
+                       
+
+                        <div class="detail">
+                            <a href="https://www.tacter.com/tft/guides/fiddle-reroll-guide-complet-73bdd09b" target="_blank" id="detailbutton">More infos</a>
+                        </div>
+            
+                    </div>
+                    
+                </div>
+
+                <div class="Comp" id="NinthComp">
+
+                    <div class="CompEntet" id="NinthCompEntet" onclick="openNinthcomp(), rotatearrow(8)">
+                        <h1> Zeri bastion / cypher / Exo</h1>
+                        <img src="IMAGE/TFT14_Sejuani.avif" alt="" id="sejuani">
+                        <img src="IMAGE/TFT14_Zeri.avif" alt="" id="zeri">
+                        <img src="IMAGE/tft14_armorclad.svg" alt="" id="bastionsvg">
+                        <img src="IMAGE/arrow-next-small-svgrepo-com (2).svg" alt="" id="arrowsvg9" class="arrow">
+                    </div>
+
+                    <div class="Compdetail" id="NinthCompdetail">
+                        <img src="IMAGE/zeri_bastion.PNG" alt="" id="photocomp">
+
+                        <div class="detail">
+                            <a href="https://www.tacter.com/tft/guides/zeri-bastionexotechcypher-guide-complet-e70ddb28" target="_blank" id="detailbutton">More infos</a>
+                        </div>
+            
+                    </div>
+                    
+                </div>
+
+
+                <div class="Comp" id="TenthComp">
+
+                    <div class="CompEntet" id="TenthCompEntet" onclick="openTenthcomp(), rotatearrow(9)">
+                        <h1> Anima squad</h1>
+                        <img src="IMAGE/TFT14_Leona.avif" alt="" id="leona">
+                        <img src="IMAGE/TFT14_Xayah.avif" alt="" id="xayah">                  
+                        <img src="IMAGE/14DarkWebEmblemItem.avif" alt="" id="spatanima">
+                        <img src="IMAGE/tft14_animasquad.svg" alt="" id="animasvg">
+                        <img src="IMAGE/arrow-next-small-svgrepo-com (2).svg" alt="" id="arrowsvg10" class="arrow">
+      
+                    </div>
+
+                    <div class="Compdetail" id="TenthCompdetail">
+
+                        <img src="IMAGE/AnimaSquad.PNG" alt="" id="photocomp">
+
+                        <div class="detail">
+                            <a href="https://www.tacter.com/tft/guides/anima-squad-uwu-guide-complet-dc28e838" target="_blank" id="detailbutton">More infos</a>
+                        </div>
+            
+                    </div>
+                    
+                </div>
+
+                
+                <div class="Comp" id="EleventhComp" onclick="openEleventhcomp(), rotatearrow(10)">
+
+                    <div class="CompEntet" id="EleventhCompEntet">
+                        <h1> Fast 8 MF</h1>
+                        <img src="IMAGE/tft14_missfortune_square.tft_set14.png" alt="" id="MF">
+                        <img src="IMAGE/TFT14_Leona.avif" alt="" id="leona">
+                        <img src="IMAGE/tft14_vanguard.svg" alt="" id="vanguardsvg">
+                        <img src="IMAGE/arrow-next-small-svgrepo-com (2).svg" alt="" id="arrowsvg11" class="arrow">
+                    </div>
+
+                    <div class="Compdetail" id="EleventhCompdetail">
+                        <img src="IMAGE/MF_fast_8.PNG" alt="" id="photocomp">
+
+                        <div class="detail">
+                            <a href="https://www.tacter.com/tft/guides/marksman-vanguard-65a41833" target="_blank" id="detailbutton">More infos</a>
+                        </div>
+
+            
+                    </div>
+                    
+
+                </div>
+
+                <div class="Comp" id="TwelfthComp">
+
+                    <div class="CompEntet" id="TwelfthCompEntet"  onclick="openTwelfthcomp(), rotatearrow(11)">
+                        <h1> Techies / Street demon Brand</h1>
+                        <img src="IMAGE/TFT14_Brand.avif" alt="" id="brand">
+                        <img src="IMAGE/tft14_techie.svg" alt="" id="techiesvg">
+                        <img src="IMAGE/arrow-next-small-svgrepo-com (2).svg" alt=""id="arrowsvg12" class="arrow">
+                    </div>
+
+                    <div class="Compdetail" id="TwelfthCompdetail">
+                        <img src="IMAGE/brand_techies.PNG" alt="" id="">
+    
+
+                        <div class="detail">
+                            <a href="https://www.tacter.com/tft/guides/brand-carry-guide-complet-ba9a8d5c" target="_blank" id="detailbutton">More infos</a>
+                        </div>
+            
+                    </div>
+                    
+                </div>
+
+
+                <div class="Comp" id="ThirdteenthComp" onclick="openThirdteenthcomp(), rotatearrow(12)">
+
+                    <div class="CompEntet" id="ThirdteenthCompEntet">
+                        <h1> Executioner reroll</h1>
+                        <img src="IMAGE/TFT14_Graves.avif" alt="" id="graves">
+                        <img src="IMAGE/TFT14_Rengar.avif" alt="" id="rengar">
+                        <img src="IMAGE/tft14_cutter.svg" alt="" id="execsvg">
+                        <img src="IMAGE/arrow-next-small-svgrepo-com (2).svg" alt=""id="arrowsvg13" class="arrow">
+                    </div>
+
+                    <div class="Compdetail" id="ThirdteenthCompdetail">
+                        <img src="IMAGE/exec_reroll.PNG" alt="" id="photocomp">
+
+                        <div class="detail">
+                            <a href="https://www.tacter.com/tft/guides/executioner-reroll-guide-complet-630204a0" target="_blank" id="detailbutton">More infos</a>
+                        </div>
+            
+                    </div>
+                    
+                </div>
+
+                <div class="Comp" id="FourteenthComp" onclick="openFourteenthcomp(), rotatearrow(13)">
+
+                    <div class="CompEntet" id="FourteenthCompEntet">
+                        <h1> Veigar reroll</h1>
+                        <img src="IMAGE/TFT14_Veigar.avif" alt="" id="veigar">
+                        <img src="IMAGE/TFT14_Illaoi.avif" alt="" id="illaoi">
+                        <img src="IMAGE/tft14_armorclad.svg" alt="" id="bastionsvg">
+                        <img src="IMAGE/tft14_techie.svg" alt="" id="techiesvg">
+                        <img src="IMAGE/arrow-next-small-svgrepo-com (2).svg" alt="" id="arrowsvg14" class="arrow">
+                    </div>
+
+                    <div class="Compdetail" id="FourteenthCompdetail">
+                        <img src="IMAGE/veigar_reroll.PNG" alt="" id="photocomp">
+
+                        <div class="detail">
+                            <a href="https://www.tacter.com/tft/guides/veigar-reroll-guide-complet-a9749e63" target="_blank" id="detailbutton">More infos</a>
+                        </div>
+            
+                    </div>
+                    
+                </div>
+
+                
+                <div class="Comp" id="FifthteenthComp" onclick="openFifthteenthComp(), rotatearrow(14)">
+
+                    <div class="CompEntet" id="FifthteenthCompEntet">
+                        <h1> Séraphine Reroll</h1>
+                        <img src="IMAGE/tft14_seraphine_square.tft_set14.png" alt="" id="seraphine">
+                        <img src="IMAGE/tft14_poppy_square.tft_set14.png" alt="" id="poppy">
+                        <img src="IMAGE/tft14_animasquad.svg" alt="" id="animasvg">
+                        <img src="IMAGE/arrow-next-small-svgrepo-com (2).svg" alt="" id="arrowsvg15" class="arrow">
+                    </div>
+
+                    <div class="Compdetail" id="FifthteenthCompdetail">
+                        <img src="IMAGE/Seraphine_reroll.PNG" alt="" id="photocomp">
+
+                        <div class="detail">
+                            <a href="https://www.tacter.com/tft/guides/seraphine-reroll-811289c3" target="_blank" id="detailbutton">More infos</a>
+                        </div>
+            
+                    </div>
+                    
+                </div>
+
+
+                <div class="Comp" id="SixteenthComp" onclick="openSixteenthComp(), rotatearrow(15)">
+
+                    <div class="CompEntet" id="SixteenthCompEntet">
+                        <h1> AMP flex / Annie</h1>
+                        <img src="IMAGE/TFT14_Annie.avif" alt="" id="annie">
+                        <img src="IMAGE/tft14_supercharge.svg" alt="" id="ampsvg">
+                        <img src="IMAGE/arrow-next-small-svgrepo-com (2).svg" alt="" id="arrowsvg16" class="arrow">
+                    </div>
+
+                    <div class="Compdetail" id="SixteenthCompdetail">
+
+                            <img src="IMAGE/AnnieAMP.PNG" alt="" id="photocomp">
+
+                        <div class="detail">
+                            <a href="https://www.tacter.com/tft/guides/amp-strategist-d3276dbc" target="_blank" id="detailbutton">More infos</a>
+                        </div>
+            
+                    </div>
+                    
+                </div>
+
+
+
+            </div>      
+            
+
+
+
+
+
+
+
+
+
+
+            <div class="Orga">
+
+                <div class="FirstChoice" id="FirstChoiceRow">
+
+                    <div class="Choice" id="Big_economy" onclick="openBigEcoChoice()">
+                        <h1>Big economy</h1>
+                    </div>
+
+                    <div class="Choice" id="Low_economy" onclick="openLowEcoChoice()">
+                        <h1>Low economy</h1>
+                    </div>
+
+                    <div class="Choice" id="Emblem" onclick="openEmblem()">
+                        <h1> Emblem</h1>
+                    </div>
+
+                    <div class="Choice" id="AllComp" onclick="openAllComp()">
+                        <h1>All Comp</h1>
+                    </div>
+
+                </div>
+
+                <div class="BigEcoChoice" id="BigEcoChoice">
+
+                    <div class="Choice" id="BigEcoAD" onclick="openBigEcoAD()">
+                        <h1>AD</h1>
+                    </div>
+
+                    <div class="Choice" id="BigEcoAP" onclick="openBigEcoAP()">
+                        <h1>AP</h1>
+                    </div>
+
+                    <div class="Choice" id="BigEcoFlex" onclick="openBEFlex()">
+                        <h1>Flex</h1>
+                    </div>
+                </div>
+
+                <div class="BigEcoADChoice" id="BigEcoADChoice">
+
+                    <div class="Choice" id="ADCast" onclick="openADCast()">
+                        <h1>Cast</h1>
+                    </div>
+
+                    <div class="Choice" id="ADAS" onclick="openADAS()">
+                        <h1>Attack-speed</h1>
+                    </div>
+
+                </div>
+
+
+                <div class="BigEcoAPChoice" id="BigEcoAPChoice">
+
+                    <div class="Choice" id="Tears" onclick="open3Tears()">
+                        <h1>3+ Tears</h1>
+                    </div>
+
+                    <div class="Choice" id="APrest" onclick="openAPRest()">
+                        <h1>...</h1>
+                    </div>
+
+                </div>
+
+
+                <div class="LowEcoChoice" id="LowEcoChoice">
+
+                    <div class="Choice" id="LowEcoAD" onclick="openLowEcoAD()">
+                        <h1>AD</h1>
+                    </div>
+
+                    <div class="Choice" id="LowEcoAP" onclick="openLowEcoAP()">
+                        <h1>AP</h1>
+                    </div>
+                </div>
+
+                <div class="LowEcoADChoice" id="LowEcoADChoice">
+                    
+                    <div class="Choice" id="LowEcoADBack" onclick="openLowEcoADBack()">
+                        <h1>Backline</h1>
+                    </div>
+
+                    <div class="Choice" id="LowEcoADFight" onclick="openLowEcoADFight()">
+                        <h1>Fighter</h1>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>    
+
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="copyright">
+            <p>This website isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games, and all associated properties are trademarks or registered trademarks of Riot Games, Inc.</p>
+        </div>
+
+        <div class="credits">
+
+
+        <p id="creditThamriel">
+           
+        </p>
+
+        <p id="creditBluefrog">
+
+        </p>
+
+        </div>
+
+    </footer>
+
+
+
+<script src="TFTMainpage.js"></script>
+
+
+</body>
+
+
+
+</html>

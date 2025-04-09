@@ -1,0 +1,1229 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    width: auto;
+    height: auto;
+    background-image: linear-gradient(to top,  rgb(172, 235, 160), rgb(250, 193, 250));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+header {
+    width: 100%;
+    height: 150px;
+    background-color: rgb(118, 138, 128);
+    border-bottom: 2px solid rgba(255, 238, 192);
+    box-shadow: 1px 1px 10px rgba(255, 238, 192);
+    justify-content: center;
+}
+
+.Title {
+    position: relative;
+    color: rgba(255, 238, 192);
+    height: auto;
+    width: 250px;
+    left: calc(50% - 125px);
+    top: calc(50% - 20px);
+}
+
+
+header img {
+    position: relative;
+    left: 5vh;
+    width: 150px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 50px;
+    top: -1.8vh;
+}
+
+/*
+#buttonheader svg {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 90px;
+    left: calc(50% - 25px);
+    cursor: pointer;
+}*/
+
+
+
+.menu {
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.411);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    right: -105%;
+
+}
+
+
+menu.active {
+    translate: 2s;
+    transform: translateX(100%);
+}
+
+.menu a {
+    background-color: rgba(223, 56, 56, 0.788);
+    width: 150px;
+    height: 50px;
+    justify-content: center;
+    align-content: center;
+}
+
+
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+.Global {
+    height: auto;
+    width: auto;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+
+.presentationframe {
+    position: relative;
+    width: 100%;
+    height: 30%;
+    background-color: rgb(118, 138, 128);
+    margin-top: 50px;
+    padding-top: 2vh;
+}
+
+.presentationframe p {
+    position: relative;
+    font-size: 26px;
+    text-align: center;
+    margin: 5px;
+    color: rgba(255, 238, 192);
+    width: 50vw;
+    left: calc(50% - 25vw);
+}
+
+#Welcome {
+    font-size: 30px;
+}
+
+
+.imagechoncc {
+    position: absolute;
+    left: 8%;
+    width: auto;
+    height: 75%;
+    top: 65%
+}
+
+#choncc {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+
+.chonccies {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    right: -55%;
+    width: 40%;
+    height: 16vh;
+    top: 5vh;
+}
+
+.imagechonccies {
+    position: relative;
+    width: auto;
+    height: auto;
+
+}
+
+.imagechonccies img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+#chonccmaster {
+    visibility: hidden;
+}
+
+#chonccmaster.on {
+    visibility: visible;
+}
+
+
+#chonccdiamond {   
+    visibility: hidden;
+}
+
+#chonccdiamond.on {
+    visibility: visible;
+}
+
+
+#chonccplat {
+    visibility: hidden;
+
+}
+
+#chonccplat.on {
+    visibility: visible;
+
+}
+
+#chonccchall {
+    visibility: hidden;
+}
+
+#chonccchall.on {
+    visibility: visible;
+}
+
+
+
+
+
+.Composition {
+    position: relative;
+    width: auto;
+    height: auto;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+
+}
+
+
+
+
+
+/* First Comp */
+
+.CompEntet {
+    display: flex;
+    height: 125px;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 3%;
+    align-items: center;
+    align-content: center;
+    cursor: pointer;
+}
+
+
+.Comp {
+    display: none;
+}
+
+.Comp.visible {
+    position: relative;
+    width: auto;
+    background-color: rgb(78, 105, 91);
+    height: 125px;
+    border-radius: 15px;
+    border: 2px black solid;
+    z-index: 100;
+    margin-left: 25px;
+    margin-right: 25px;
+    display: grid;
+}
+
+.Comp:hover {
+    border: 2px solid rgba(255, 238, 192);
+}
+
+.Comp.active {
+    height: 625px;
+    transition: 1.2s ease-in-out;
+    border: 2px solid rgba(255, 238, 192);
+}
+
+
+.Comp h1 {
+    position: relative;
+    user-select: none;
+    color: rgba(255, 238, 192);
+}
+
+.Compdetail{
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.Compdetail.active {
+    transition: 1.2s ease-in-out;
+    height: 500px;
+}
+
+
+#photocomp {
+    max-height: 75%;
+    max-width: 100%;
+}
+
+
+/*
+
+
+GLOBAL CUSTOMS FOR DETAIL 
+
+
+*/
+
+
+.detail {
+    width: 120px;
+    height: 40px;
+    border: 3px solid rgba(255, 238, 192);
+    font-size: larger;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+
+.detail:hover {
+    background-color: rgb(255, 238, 192);
+    border: 3px solid rgb(78, 105, 91);
+
+}
+
+.detail:hover a {
+   color: rgb(78, 105, 91);
+}
+
+.detail a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: rgba(255, 238, 192);
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    font-size: large;
+}
+
+
+#vanguardsvg {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    user-select: none;
+}
+
+#aphelios {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    user-select: none;
+}
+
+#xayah {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    user-select: none;
+}
+
+.arrow {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+    user-select: none;
+}
+
+.arrow.active {
+    transform: rotate(90deg);
+}
+
+
+#divinicorpsvg {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    user-select: none;
+}
+
+#urgot {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    user-select: none;
+}
+
+#vex {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    user-select: none;
+}
+
+
+#syndicatsvg {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    user-select: none;
+}
+
+#shaco {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    user-select: none;
+}
+
+#zed {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    user-select: none;
+}
+
+
+#TF {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    user-select: none;
+}
+
+#skarner {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    user-select: none;
+}
+
+
+#controllersvg {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    user-select: none;
+}
+
+
+#annie {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    user-select: none;
+}
+
+#neeko {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    user-select: none;
+}
+
+#hotrodsvg {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    user-select: none;
+}
+
+#jhin {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    user-select: none;
+}
+
+#naafiri {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    user-select: none;
+}
+
+
+
+#slayersvg {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    user-select: none;
+}
+
+#vayne {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    user-select: none;
+}
+
+#jarvan {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    user-select: none;
+}
+
+
+#bruisersvg {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    user-select: none;
+}
+
+#fiddle {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    user-select: none;
+}
+
+#spatbruiser {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    user-select: none;
+}
+
+
+#zeri {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    user-select: none;
+}
+
+#sejuani {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    user-select: none;
+}
+
+
+#animasvg {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    user-select: none;
+}
+
+#spatanima {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    user-select: none;
+}
+
+#xayah {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    user-select: none;
+}
+
+#leona {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    user-select: none;
+}
+
+
+
+#MF {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    user-select: none;
+}
+
+#bastionsvg {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    user-select: none;
+}
+
+
+
+#brand {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    user-select: none;
+}
+
+#spattechie {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    user-select: none;
+}
+
+#techiesvg {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    user-select: none;
+}
+
+
+
+#rengar {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    user-select: none;
+}
+
+#graves {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    user-select: none;
+}
+
+#execsvg {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    user-select: none;
+}
+
+
+
+
+#veigar {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    user-select: none;
+}
+
+#illaoi {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    user-select: none;
+}
+
+#techiesvg {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    user-select: none;
+}
+
+#bastionsvg {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    user-select: none;
+}
+
+
+
+#seraphine {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    user-select: none;
+}
+
+#poppy {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    user-select: none;
+}
+
+#animasvg {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    user-select: none;
+}
+
+#annie {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    user-select: none;
+}
+
+#ampsvg {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    user-select: none;
+}
+
+
+
+/* 
+
+
+ORGANIGRAMME 
+
+
+
+*/
+
+
+.Orga {
+    width: auto;
+    height: 500px;
+    background-color: rgb(78, 105, 91);
+    margin-left: 25px;
+    margin-right: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    padding-top: 5%;
+    gap: 50px;
+    border-radius: 15px;
+    border: 2px solid rgb(1, 15, 27);
+}
+
+.Orga h1 {
+    user-select: none;
+}
+
+
+.FirstChoice {
+    position: relative;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    gap: 10px;
+}
+
+.Choice {
+    padding: 10px;
+    border: 3px solid rgba(255, 238, 192);
+    cursor: pointer;
+    color: rgba(255, 238, 192);
+    border-radius: 20px;
+}
+
+.Choice:hover {
+    background-color: rgba(255, 238, 192);
+    border: 3px solid rgb(255, 238, 192);
+    color: rgb(78, 105, 91);
+}
+
+
+
+
+/*Big Eco Choice */
+
+
+
+
+.BigEcoChoice {
+    display: none;
+}
+
+
+.BigEcoChoice.on {
+    position: relative;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#Big_economy.selected {
+    background-color: rgba(255, 238, 192);
+    border: 3px solid rgba(255, 238, 192);
+    color: rgb(78, 105, 91);
+}
+
+
+
+
+/* BigECOAD */
+
+
+
+.BigEcoADChoice {
+    display: none;
+}
+
+.BigEcoADChoice.on {
+    position: relative;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+
+#BigEcoAD.selected {
+    background-color: rgba(255, 238, 192);
+    border: 3px solid rgba(255, 238, 192);
+    color: rgb(78, 105, 91);
+    
+}
+
+#ADCast.selected {
+    background-color: rgba(255, 238, 192);
+    border: 3px solid rgba(255, 238, 192);
+    color: rgb(78, 105, 91);
+}
+
+#ADAS.selected {
+    background-color: rgba(255, 238, 192);
+    border: 3px solid rgba(255, 238, 192);
+    color: rgb(78, 105, 91);
+}
+
+
+/* Big Eco AP Choice */
+
+
+
+.BigEcoAPChoice {
+    display: none;
+}
+
+.BigEcoAPChoice.on {
+    position: relative;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#BigEcoAP.selected {
+    background-color: rgba(255, 238, 192);
+    border: 3px solid rgba(255, 238, 192);
+    color: rgb(46, 54, 50);
+}
+
+
+#Tears.selected {
+    background-color: rgba(255, 238, 192);
+    border: 3px solid rgba(255, 238, 192);
+    color:rgb(78, 105, 91);
+}
+
+#APrest.selected {
+    background-color: rgba(255, 238, 192);
+    border: 3px solid rgba(255, 238, 192);
+    color: rgb(78, 105, 91);
+}
+
+
+/* BIG ECO FLEX */
+
+
+#BigEcoFlex.selected {
+    background-color: rgba(255, 238, 192);
+    border: 3px solid rgba(255, 238, 192);
+    color: rgb(78, 105, 91);
+}
+
+
+
+
+
+/* Low Eco Choice */
+
+
+
+.LowEcoChoice {
+   display: none;
+}
+
+.LowEcoChoice.on {
+    position: relative;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#Low_economy.selected {
+    background-color: rgba(255, 238, 192);
+    border: 3px solid rgba(255, 238, 192);
+    color: rgb(78, 105, 91);
+}
+
+
+/* LowEcoAP */
+
+#LowEcoAP.selected {
+    background-color: rgba(255, 238, 192);
+    border: 3px solid rgba(255, 238, 192);
+    color: rgb(78, 105, 91);
+}
+
+
+
+/*Low Eco AD */
+
+
+
+.LowEcoADChoice {
+    display: none;
+}
+
+.LowEcoADChoice.on {
+    position: relative;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+#LowEcoAD.selected {
+    background-color: rgba(255, 238, 192);
+    border: 3px solid rgba(255, 238, 192);
+    color: rgb(78, 105, 91);
+}
+
+#LowEcoADBack.selected {
+    background-color: rgba(255, 238, 192);
+    border: 3px solid rgba(255, 238, 192);
+    color: rgb(78, 105, 91);
+}
+
+#LowEcoADFight.selected {
+    background-color: rgba(255, 238, 192);
+    border: 3px solid rgba(255, 238, 192);
+    color: rgb(78, 105, 91);
+}
+
+
+
+/* Emblem */
+
+#Emblem.selected {
+    background-color: rgba(255, 238, 192);
+    border: 3px solid rgba(255, 238, 192);
+    color: rgb(78, 105, 91);
+}
+
+
+
+/* All Comp */
+
+#AllComp.selected {
+    background-color: rgba(255, 238, 192);
+    border: 3px solid rgba(255, 238, 192);
+    color: rgb(78, 105, 91);
+}
+
+
+.footer {
+    position: relative;
+    width: 100%;
+    height: 10vh;
+    background-color: rgba(169, 169, 169, 0.562);
+    margin-top: 20vh;
+    text-align: center;
+
+}
+
+.copyright {
+    position: relative;
+    font-size: 15px;
+    top: 15px;
+}
+
+.credits {
+    position: relative;
+    font-size: 13px;
+    top: 50px;
+}
+
+
+
+.langbutton {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    left: calc(50%-100px);
+    display: flex;
+    flex-direction: row;
+
+}
+
+.langbutton svg{
+    width: 60px;
+    height: 35px;
+
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+
+
+
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+  @media only screen and (max-width : 1380px) {
+    .Global {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    .imagechoncc {
+        width: 25%;
+        height: 50%;
+        left: 5%;
+    }
+
+    .chonccies {
+        width: 50%;
+        right: -40%;
+    }
+
+}
+
+
+
+@media only screen and (max-width : 1000px) {
+
+    .imagechoncc {
+        width: 40%;
+        height: 70%;
+        left: 2%;
+        top: 75%;
+ 
+    }
+
+    .chonccies {
+        display: none;
+    }
+ 
+ }
+
+
+@media only screen and (max-width : 670px) {
+
+     .FirstChoice { 
+        display: grid;
+        grid-template-columns: auto auto;
+       grid-template-rows: auto auto;
+     }
+     .BigEcoChoice.on {
+        gap: 15px;
+        justify-content: center;
+     }
+
+     .BigEcoADChoice.on {
+        gap: 15px;
+        justify-content: center;
+     }
+
+     .BigEcoAPChoice.on {
+        gap: 15px;
+        justify-content: center;
+     }
+
+     .LowEcoADChoice.on {
+        gap: 15px;
+        justify-content: center;
+     }
+
+
+    #vanguardsvg {
+        display: none;
+    }
+
+    #divinicorpsvg { 
+        display: none;
+    }
+
+    #syndicatsvg {
+        display: none;
+    }
+
+    #controllersvg {
+        display: none;
+    }
+
+    #hotrodsvg {
+        display: none;
+    }
+    
+    #bruisersvg {
+        display: none;
+    }
+
+    #bastionsvg {
+        display: none;
+    }
+
+    #animasvg {
+        display: none;
+    }
+
+    #techiesvg {
+        display: none;
+    }
+
+    #execsvg {
+        display: none;
+    }
+
+    #ampsvg {
+        display: none;
+    }
+
+    .imagechoncc {
+        display: none;
+
+    }
+
+}
+
